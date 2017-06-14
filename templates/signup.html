@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+        <div align="center">
+            <h1>Conference Room Booking System</h1>
+            <h1>Sign Up</h1>
+
+          <form action="/users/signup/" method="post">
+              {% csrf_token %}
+          <div>
+            <div>
+              <label>
+                First Name
+              </label>
+              <input type="text" required autocomplete="off" name="first_name"/>
+            </div>
+
+            <div>
+              <label>
+                Last Name
+              </label>
+              <input type="text"required autocomplete="off" name="last_name"/>
+            </div>
+
+              <div>
+              <label>
+                Designation
+              </label>
+              <input type="text" required autocomplete="off" name="designation"/>
+            </div>
+
+          <div>
+            <label>
+              Email Address
+            </label>
+            <input type="email"required autocomplete="off" name="email"/>
+          </div>
+
+          <div>
+            <label>
+              Password
+            </label>
+            <input type="password"required autocomplete="off" name="password"/>
+          </div>
+          </div>
+
+
+          <button type="submit" class="button button-block"/>Sign UP</button>
+
+          </form>
+
+        </div>
+</div>
+</body>
+</html>
